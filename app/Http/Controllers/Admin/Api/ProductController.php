@@ -1,0 +1,40 @@
+<?php
+
+/**********************************************************************************
+// ProductController (Código Fonte)
+// 
+// Criação:     17 Fev 2025
+// Atualização: *
+// 
+// Descrição:   Controlador responsável pela gestão das funcionalidades 
+//              administrativas, como exibição do dashboard e outras operações 
+//              relacionadas ao admin.
+//
+// Tipo:        Contolador API
+//
+ **********************************************************************************/
+
+namespace App\Http\Controllers\Admin\Api;
+
+use App\Http\Controllers\Controller;
+
+use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Validator;
+use Illuminate\Http\JsonResponse;
+
+
+class ProductController extends Controller
+{
+    public function index() {}
+
+    public function store(Request $request): JsonResponse
+    {
+        return response()->json(['message' => 'Produto criado com sucesso']);
+    }
+
+    public function show() {}
+
+    public function update() {}
+
+    public function destroy() {}
+}
